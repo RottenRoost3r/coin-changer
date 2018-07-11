@@ -21,5 +21,6 @@ class TestCoinChanging < Minitest::Test
 
     def test_assert_that_dime_works_with_quarter
     	assert_equal({:quarter=>1, :dime=>1}, coins(35))
+    	assert_equal({:quarter=>1, :dime=>2}, coins(45))
     end
 end

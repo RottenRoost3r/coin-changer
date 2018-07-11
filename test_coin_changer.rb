@@ -44,5 +44,6 @@ class TestCoinChanging < Minitest::Test
     	assert_equal({:quarter=>1, :dime=>1, :nickel=>1, :penny=>1}, coins(41))
     	assert_equal({:quarter=>1, :dime=>1, :nickel=>1, :penny=>2}, coins(42))
     	assert_equal({:quarter=>1, :dime=>2, :penny=>3}, coins(48))
+    	assert_equal({:quarter=>1, :penny=>1}, coins(26))
     end
 end

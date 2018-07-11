@@ -39,4 +39,8 @@ class TestCoinChanging < Minitest::Test
     def test_assert_that_penny_works
     	assert_equal({:penny=>1}, coins(1))
     end
+
+    def test_assert_that_penny_works_with_others
+    	assert_equal({:quarter=>1, :dime=>1, :nickel=>1, :penny=>1}, coins(41))
+    end
 end

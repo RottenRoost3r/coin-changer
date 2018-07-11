@@ -1,2 +1,3 @@
 def coins
+	coins = {}
 end

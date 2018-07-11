@@ -8,6 +8,10 @@ class TestCoinChanging < Minitest::Test
     end
 
     def test_assert_that_result_is_hash
-    	assert_equal(Hash, coins().class)
+    	assert_equal(Hash, coins(0).class)
+    end
+
+    def test_assert_that_quarter_works
+    	assert_equal({:quarter=>1}, coins(25))
     end
 end

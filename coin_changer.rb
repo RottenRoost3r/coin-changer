@@ -7,7 +7,10 @@ def coins(number)
 			number -= ammounts[:quarter]
 			q_count += 1
 			coin.store(:quarter, q_count)
-		else
+		elsif number>= ammounts[:dime]
+			number -= ammounts[:dime]
+			d_count += 1
+			coin.store(:dime, d_count)
 		end
 	end
 	coin

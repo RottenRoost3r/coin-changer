@@ -29,4 +29,8 @@ class TestCoinChanging < Minitest::Test
     def test_assert_that_nickel_works
     	assert_equal({:nickel=>1}, coins(5))
     end
+
+    def test_assert_that_nickel_works_with_dime_and_quarter
+    	assert_equal({:quarter=>1, :dime=>1, :nickel=>1}, coins(40))
+    end
 end

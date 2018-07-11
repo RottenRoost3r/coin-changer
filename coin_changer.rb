@@ -7,10 +7,14 @@ def coins(number)
 			number -= ammounts[:quarter]
 			q_count += 1
 			coin.store(:quarter, q_count)
-		elsif number>= ammounts[:dime]
+		elsif number >= ammounts[:dime]
 			number -= ammounts[:dime]
 			d_count += 1
 			coin.store(:dime, d_count)
+		elsif number >= ammounts[:nickel]
+			number -= ammounts[:nickel]
+			n_count += 1
+			coin.store(:nickel, n_count)
 		end
 	end
 	coin

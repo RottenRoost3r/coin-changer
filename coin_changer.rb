@@ -15,6 +15,10 @@ def coins(number)
 			number -= ammounts[:nickel]
 			n_count += 1
 			coin.store(:nickel, n_count)
+		elsif number >= ammounts[:penny]
+			number-= ammounts[:penny]
+			p_count += 1
+			coin.store(:penny, p_count)
 		end
 	end
 	coin

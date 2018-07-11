@@ -1,3 +1,2 @@
-def 
-	
+def coins
 end

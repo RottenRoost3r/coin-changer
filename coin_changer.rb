@@ -7,6 +7,7 @@ def coins(number)
 			number -= ammounts[:quarter]
 			q_count += 1
 			coin.store(:quarter, q_count)
+		else
 		end
 	end
 	coin
